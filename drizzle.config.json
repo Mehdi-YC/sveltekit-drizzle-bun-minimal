@@ -1,0 +1,9 @@
+{
+  "out": "./migrations",
+  "schema": "./src/lib/server/schema.js",
+  "breakpoints": true,
+  "driver":"pg",
+  "dbCredentials": {
+		"connectionString": "postgres://postgres:mysecretpassword@127.0.0.1:5432/test"
+	}
+}
