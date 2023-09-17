@@ -5,7 +5,7 @@
     export let methods = [];
   </script>
   
-  <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+  <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-black-200">
     <div class="border-b border-gray-200 px-4 py-3">
       <h3 class="text-lg font-semibold text-gray-800 text-center">{ tableName }</h3>
     </div>
