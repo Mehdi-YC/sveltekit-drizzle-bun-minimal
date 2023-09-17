@@ -23,6 +23,8 @@
 
 <Wire startX={left1} startY={top1} endX={left2} endY={top2} type="block"/>
 
+
+
 <Dragabble bind:centerX={left1} bind:centerY={top1}>
 <ERDTable tableName="Sample Table" {columns} {methods}/>
 </Dragabble>

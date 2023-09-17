@@ -40,7 +40,10 @@
     return [point1, splitPoint1, middlePoint, splitPoint2, point2];
   }
 
-  $:line = splitLineIntoThreePoints({x:startX,y:startY},{x:endX,y:endY});
+  $: line = splitLineIntoThreePoints(
+    { x: startX, y: startY },
+    { x: endX, y: endY }
+  );
 </script>
 
 {#if type == "normal" || type == "all"}
@@ -58,8 +61,8 @@
       </svg>
     {/if}
   </div>
-  {/if}
-{#if type == "block"  || type == "all"}
+{/if}
+{#if type == "block" || type == "all"}
   <div class="container">
     {#if startX !== 0 && startY !== 0 && endX !== 0 && endY !== 0}
       <svg class="wire">
@@ -85,25 +88,28 @@
       </svg>
     {/if}
   </div>
-  {/if}
+{/if}
 {#if type == "smooth" || type == "all"}
   <div class="container">
-    <svg class="w-[100vw] h-[100vh] z-10">
+    <svg class="w-[100vw] h-[100vh] -z-10">
       <!-- stroke-dasharray="5,5" -->
       <path
         stroke="blue"
         stroke-width="1"
         fill="none"
         d="M{line[0].x},{line[0].y} Q{line[1].x},{line[2].y} {line[2]
-          .x},{line[2].y } T {line[3].x},{line[3].y}"
+          .x},{line[2].y} T {line[3].x},{line[3].y}"
       />
     </svg>
   </div>
 {/if}
 
+<option value=""></option>
+
 <style>
   .container {
     position: relative;
+    z-index: -10;
   }
 
   .wire {
