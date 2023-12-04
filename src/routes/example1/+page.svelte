@@ -21,7 +21,7 @@
 
 
 <Wire startX={left1} startY={top1} endX={left2} endY={top2} type="block"/>
-<Wire startX={left3} startY={top3} endX={left4} endY={top4} />
+<Wire startX={left3} startY={top3} endX={left4} endY={top4} type="normal"/>
 <Wire startX={left1} startY={top1} endX={left3} endY={top3} type="smooth"/>
 
 

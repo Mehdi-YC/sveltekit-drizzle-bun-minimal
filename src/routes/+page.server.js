@@ -1,4 +1,4 @@
-import { db } from "$lib/server/database";
+/*import { db } from "$lib/server/database";
 import { users } from "$lib/server/schema";
 
 export const load = async () => {
@@ -6,4 +6,4 @@ export const load = async () => {
     return {
         allUsers
     }
-};
+};*/

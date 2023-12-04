@@ -21,7 +21,7 @@
 </script>
 
 
-<Wire startX={left1} startY={top1} endX={left2} endY={top2} type="block"/>
+<Wire startX={left1} startY={top1} endX={left2} endY={top2} type="normal"/>
 
 
 
